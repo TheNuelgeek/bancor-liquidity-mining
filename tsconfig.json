@@ -19,7 +19,8 @@
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
-    "types": ["node", "mocha", "chai"]
+    "types": ["node", "mocha", "chai"],
+    "keyofStringsOnly": false
   },
   "include": ["./deploy", "./test", "helpers"],
   "files": ["./hardhat.config.ts"]
