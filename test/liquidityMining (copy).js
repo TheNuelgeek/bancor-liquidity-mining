@@ -1,4 +1,4 @@
-import Web3 from "web3";
+const Web3 = require ("web3");
 const { expect } = require("chai");
 const { network, ethers } = require("hardhat");
 const { BigNumber } = require("ethers");
@@ -38,7 +38,7 @@ describe("Liquidity mining", function() {
   let liquidityProtectionContract;
   let funderContract;
   let liquidityProtectionSettingsContract;
-  let owner, addr1, addr2, addr3, addr4, addr5, addr6, addr7, addr8, bancorNetworkContract, addrs;
+  let owner, addr1, addr2, addr3, addr4, addr5, addr6, addr7, addr8, addrs;
 
   before(async function() {
     [owner, addr1, addr2, addr3, addr4, addr5, addr6, addr7, addr8, bancorNetworkContract, ...addrs] = await ethers.getSigners();
